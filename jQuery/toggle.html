@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+    <script src="jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <h2>The heading is this</h2>
+
+    <div id="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, veniam. Nulla quas nihil, nemo autem quo accusantium minima esse inventore quos vitae suscipit quae odio hic iure dolor nisi modi vero exercitationem incidunt labore doloremque enim. Facilis sit, quam velit, itaque fugit cumque qui, sequi quasi eum iste maxime illum in voluptate iusto animi obcaecati odio hic inventore omnis perferendis recusandae at similique illo voluptatibus. Deleniti totam quo vitae nesciunt culpa enim alias ad, non, laborum sed voluptates doloremque mollitia tempora illum repellat beatae exercitationem a quae magnam. Quo molestiae animi blanditiis quam, officia obcaecati deleniti aliquam quaerat rerum explicabo!
+    </div>
+    <br>
+    <button id="butt2">Press to Toggle</button>
+    <br><br>
+
+
+    <div id="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam sapiente repellendus culpa velit ullam quis molestiae qui perferendis animi similique nobis esse officia, et reprehenderit ad omnis possimus error voluptatibus expedita numquam ducimus. Veritatis quod numquam consequatur, dolorem repellat necessitatibus id sunt voluptas nulla magni quisquam recusandae possimus dolor.
+    </div>
+    <br>
+    <button id="butt">Press the button to Toggle</button>
+
+    <script>
+        $('#butt').click(function(){
+            $('#2').toggle(1200);
+        });
+        $('#butt2').click(function(){
+            $('#1').toggle(1000);
+        });
+    </script>
+
+
+
+    
+</body>
+</html>

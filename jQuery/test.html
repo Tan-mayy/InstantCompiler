@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            Trasitions using jQuery
+        </title>
+        <h1>
+            Changing the sites using JQuery
+        </h1>
+        <script src="jquery-3.6.1.min.js"></script>
+        <style>
+
+        #circle
+        {
+            background: rgb(162, 66, 77);
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin: 5px;
+           
+        }
+
+        div
+        {
+            font-weight: lighter;
+            margin-left: 15px;
+            margin-top: 30px;
+            font-size: larger;
+        }
+        </style>
+        
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            $("#circle").click(function()
+            {
+                $("#circle").css("background", "blue");
+            });
+        </script>
+        
+        <div id="circle"></div>
+        <!-- <iframe src="http://www.codestars.com"></iframe> -->
+        <div >Click on the circle !!!!</div>
+        
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!-- Creating a form for HTML  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Job Application Form</title>
+</head>
+<style>
+    * {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+    body {
+        background-image: url("back.jpg");
+          background-color: antiquewhite;
+        }  
+</style>
+<body>
+    
+    <h1><strong> Creating a Form </strong></h1>
+    
+    <form action="backend.php"
+    
+    <div>
+        <strong> Name :</strong><br> <input type="text" name="myFName" >
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <strong> Surname :</strong><br> <input type="text" name="myLName" >
+    </div>
+
+    <br>
+    <!-- <br> -->
+
+    <div>
+        <strong>Email :</strong><br> <input type="email" name="mymail" >
+    </div>
+    
+    <!-- <br> -->
+    <br>
+
+    <div>
+        <strong>Gender :</strong><br> <b>Male</b> <input type="radio" name="mygender" > <b>Female</b> <input type="radio" name="mygender">
+    </div>
+    
+    <br>
+
+    <div>
+        <strong>Role :</strong><br> <input type="text" name="myrole" >
+    </div>
+
+    <br>
+
+    <div>
+        <strong>Website :</strong><br> <input type="url" name = "myurl">
+    </div>
+
+    <br>
+
+    <div>
+        <strong>Password :</strong><br> <input type="password" name = "mypass">
+    </div>
+
+    <br>
+
+    <div>
+        <strong>Time :</strong><br> <input type="time" name = "mytime">
+    </div>
+
+
+    
+
+    <br>
+
+        <div>
+            <strong>Date :</strong<br> <input type="datetime-local" name="mydate">
+        </div>
+    <br>
+        <div>
+           <strong> Why you want to be hired ? : </strong><br> <textarea name="myneeds"  cols="30" rows="10">
+            </textarea>
+        </div>
+        <br>
+
+        <div><input type="submit" name="submit"</div>
+    
+</body>
+</html>

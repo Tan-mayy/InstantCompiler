@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Compiler</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+
+        #header {
+            background-color: rgb(237, 237, 237);
+            padding: 5px;
+            height: 25px;
+        }
+
+        #btncontainer {
+            width: 231px;
+            margin: 0 auto;
+
+        }
+
+        .togglebtn {
+            float: left;
+            border: 1px solid black;
+            padding: 3px;
+            border-right: none;
+
+        }
+
+        #logo {
+            float: left;
+            font-weight: bold;
+            font-size: 120%;
+        }
+
+        #html {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        #output {
+            border-right: 1px solid black;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+
+        .active {
+            background-color: aliceblue;
+        }
+
+        .highlight {
+            background-color: grey;
+        }
+
+        textarea {
+            resize: none;
+            border-top: none;
+            border-color: grey;
+            border-left: none;
+
+
+        }
+
+        .panel {
+            float: left;
+            width: 49%;
+            /* padding: 5px;
+            border-top: none; */
+
+        }
+
+        iframe {
+            border: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            CodeRunner
+        </div>
+        <div id="btncontainer">
+            <div class="togglebtn active" id="html">HTML</div>
+            <div class="togglebtn" id="css">CSS</div>
+            <div class="togglebtn" id="js">Javascript</div>
+            <div class="togglebtn active" id="output">Output</div>
+
+
+
+        </div>
+    </div>
+    <div id="bodyarea">
+        <textarea id="htmlpanel" class="panel"><p>Hello !!</p></textarea>
+        <textarea id="csspanel" class="panel hidden">p{background-color="blue";}</textarea>
+        <textarea id="jspanel" class="panel hidden">alert("Hello !!");</textarea>
+        <iframe id="outputpanel" class="panel">heyy</iframe>
+    </div>
+    <script>
+
+        $('.togglebtn').hover(function () {
+            $(this).addClass('highlight');
+
+        }, function () {
+            $(this).removeClass('highlight');
+        });
+
+        $('.togglebtn').click(function () {
+
+            $(this).toggleClass('active');
+
+            $(this).removeClass('highlight');
+
+            var panelId = $(this).attr('id') + 'panel';
+
+            $('#' + panelId).toggleClass('hidden');
+
+            var noactivepanels = 4 - $('.hidden').length;
+
+            $('.panel').width(($(window).width() / noactivepanels) - 10);
+        });
+
+        $('.panel').height($(window).height() - $('#header').height());
+
+        $('.panel').width(($(window).width / 2) - 10);
+
+        $("textarea").on("change keyup paste", function () {
+            $("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#csspanel").val() + "</style></head><body>" + $("#htmlpanel").val() + "</body></html>");
+        });
+
+        
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

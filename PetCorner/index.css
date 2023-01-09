@@ -1,0 +1,137 @@
+
+    * {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    body {
+        margin: 0%;
+        padding: 0%;
+        background: url('img/bg.jpg');
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: beige;
+    }
+
+    .left {
+        /* border: aquamarine; */
+        /* border-style: dashed; */
+        margin: 10px;
+        padding: 3px;
+        text-align: center;
+        position: absolute;
+        left: 4px;
+        top: 9px;
+        width: 91px;
+
+    }
+
+    .right {
+        /* border: burlywood; */
+        /* border-style: solid; */
+        margin: 5px;
+        padding: 3px;
+        text-align: left;
+        position: absolute;
+        right: 9px;
+        top: 19px;
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .center {
+        border: cornsilk;
+        border-style: solid;
+        margin: 5px;
+        position: relative;
+        left: 640px;
+        top: 19px;
+        padding: 3px;
+        width: 600px;
+
+
+    }
+
+    .nav {
+        font-size: larger;
+        color: blanchedalmond;
+        display: inline-block;
+    }
+
+    .nav li {
+        display: inline-block;
+        text-decoration: none;
+        font-size: larger;
+    }
+
+    .nav li a {
+        display: inline-block;
+        color: bisque;
+        font-size: large;
+        text-decoration: none;
+        padding: 10px 30px;
+        margin: 0%;
+    }
+
+    .nav li a:hover,
+    .nav li a.active {
+        color: rgb(183, 231, 230);
+        text-decoration: underline;
+    }
+
+    .left img {
+        width: 71px;
+        height: 71px;
+    }
+
+    .btn {
+        margin: 0px, 90px;
+        padding: 4px;
+        background-color: rgb(148, 164, 197);
+        font-weight: bolder;
+        border-radius: 6px;
+        font-size: 22px;
+        cursor: pointer;
+
+
+    }
+
+    .btn :hover {
+        background-color: rgb(218, 134, 109);
+    }
+
+    .btn button {
+        cursor: pointer;
+    }
+
+    .container {
+        border: 4px solid rgb(255, 223, 223);
+        margin: 164px 67px;
+        padding: 70px 22px;
+        width: 31%;
+        border-radius: 20px;
+
+    }
+
+    .formgrp input {
+        text-align: center;
+        width: 10px auto;
+        padding: 35px 201px;
+        margin: 37px 11px;
+        border-color: 3px rgb(167, 130, 159);
+        border-style: dotted;
+        border-radius: 10px;
+        font-size: 13px;
+        font-weight: 700;
+        color: black;
+
+
+
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 23%;
+        margin: auto;
+    }

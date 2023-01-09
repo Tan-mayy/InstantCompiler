@@ -1,0 +1,71 @@
+
+        .header {
+            background-color: rgb(237, 237, 237);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 5px;
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .nav {
+            width: 247px;
+            margin: 0 auto;
+            display: flex;
+
+
+        }
+
+        #html {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border: 1px solid rgb(174, 198, 234);
+            padding: 5px;
+            background-color: aliceblue;
+
+        }
+
+        #css {
+
+            border: 1px solid rgb(174, 198, 234);
+            border-left: none;
+            padding: 5px;
+        }
+
+        #js {
+            border: 1px solid rgb(174, 198, 234);
+            border-left: none;
+            padding: 5px;
+
+
+        }
+
+        #output {
+            background-color: aliceblue;
+            border: 1px solid rgb(174, 198, 234);
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            padding: 5px;
+
+        }
+
+        #logo {
+            font-weight: 450;
+            font-size: larger;
+            position: absolute;
+            padding: 5px;
+        }
+        .highlight{
+            background-color: grey;
+        }
+        .active{
+            background-color: aliceblue;
+        }
+        textarea{
+            width: 50%;
+            
+        }
